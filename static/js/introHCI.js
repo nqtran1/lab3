@@ -10,7 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is connected");
+		//$('.jumbotron h1').text("Javascript is connected");
+		$("#testjs").text("Please wait...");
+		$(".jumbotron p").addClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
 	// Add any additional listeners here
