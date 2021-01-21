@@ -12,7 +12,7 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		//$('.jumbotron h1').text("Javascript is connected");
 		$("#testjs").text("Please wait...");
-		$(".jumbotron p").addClass("active");
+		$(".jumbotron p").toggleClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
 	// Add any additional listeners here
@@ -28,6 +28,6 @@ function projectClick(e) { 
        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
     } 
     else {
-       description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
+       $("#myelement").fadeOut()
     }
 }
